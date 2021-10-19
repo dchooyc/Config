@@ -19,4 +19,3 @@ python -m pip install\
 echo -e "\n${green}Installing golang related packages${nc}\n"
 sudo pacman -S\
  go
- 
