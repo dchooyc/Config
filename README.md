@@ -15,3 +15,7 @@ linux_60.json
 For gnome keyboard shortcuts
 
     ./gnome_keyboard.sh
+
+For setting up go environment
+
+    ./go_env_setup.sh
