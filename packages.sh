@@ -1,5 +1,5 @@
 #!/bin/bash
-# This installs arch packages
+# This installs packages
 
 # Set colour for echo
 green='\033[0;32m'
@@ -19,3 +19,7 @@ python -m pip install\
 echo -e "\n${green}Installing golang related packages${nc}\n"
 sudo pacman -S\
  go
+
+# Golang installs
+echo -e "\n${green}Installing golang stuff with go${nc}\n"
+go get github.com/gin-gonic/gin
