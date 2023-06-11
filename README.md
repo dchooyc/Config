@@ -1,6 +1,8 @@
 # reset
 
-Just some back ups
+### For full set up
+
+    ./main.sh
 
 For arch packages I need that doesn't come with arcolinux
 
@@ -19,3 +21,11 @@ For gnome keyboard shortcuts
 For setting up go environment
 
     ./go_env_setup.sh
+
+For setting up transmission as default for magnet links
+
+    ./magnets.sh
+
+For setting up aliases
+
+    ./aliases.sh
