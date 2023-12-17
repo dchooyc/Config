@@ -7,10 +7,13 @@ nc='\033[0m'
 
 echo -e "\n${green}Running scripts..${nc}"
 
-./gnome_keyboard.sh
-./packages.sh
-./go_env_setup.sh
-./magnets.sh
 ./aliases.sh
+./packages.sh
+./magnets.sh
 
-echo -e "\n${green}All scripts ran!${nc}"
+echo -e "\n${green}All scripts have been executed..${nc}"
+
+dconf load / < ~/Code/reset/custom-shortcuts.conf
+
+echo -e "\n${green}Gnome keyboard shortcuts added.${nc}"
+echo -e "\n${green}Remember to run source ~/.bashrc${nc}"

@@ -7,19 +7,15 @@ nc='\033[0m'
 
 # Python related packages
 echo -e "\n${green}Installing python related packages${nc}\n"
-sudo pacman -S\
- python python-pip python-mysqlclient
-
-# Python installs with pip
-echo -e "\n${green}Installing python stuff with pip${nc}\n"
-python -m pip install\
- Django
-
+sudo pacman --color auto -S\
+ python
+ 
 # Golang related packages
 echo -e "\n${green}Installing golang related packages${nc}\n"
-sudo pacman -S\
+sudo pacman --color auto -S\
  go
 
-# Golang installs
-echo -e "\n${green}Installing golang stuff with go${nc}\n"
-go get github.com/gin-gonic/gin
+# Install neovim
+echo -e "\n${green}Installing neovim${nc}\n"
+sudo pacman --color auto -S\
+ neovim
