@@ -24,18 +24,31 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# Quick access
+# Access folders
 alias tt="cd ~/Notes"
 alias gg="cd ~/Code"
 alias rr="cd ~/Downloads"
+
+# Commands
 alias vv="sudo pacman --color auto -S"
 alias 11="python3"
 alias 22="go run"
+alias 33="yarn start"
 alias bb="cd"
 alias ee="exit"
 alias ff="clear"
 alias vi="nvim"
-alias zz="nvim ~/.bashrc"
+
+# Manage aliases
+alias aa="cp ~/Code/reset/.aliases ~/.aliases; source ~/.bashrc"
+alias zz="nvim ~/Code/reset/.aliases"
+
+# Available aliases
+# alias qq=""
+# alias ww=""
+# alias xx=""
+# alias 44=""
+# alias 55=""
 
 # Git stuff
 alias gi="git init"
