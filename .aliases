@@ -1,8 +1,8 @@
 # Export custom keyboard shortcuts for gnome
-alias kexport="dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' > ~/Code/reset/custom-shortcuts.conf"
+alias kexport="dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' > ~/Config/custom-shortcuts.conf"
 
 # Import custom keyboard shortcuts for gnome
-alias kimport="dconf load / < ~/Code/reset/custom-shortcuts.conf"
+alias kimport="dconf load / < ~/Config/custom-shortcuts.conf"
 
 # Network stuff
 alias ping="ping -c 5"
@@ -28,6 +28,7 @@ alias .....="cd ../../../.."
 alias tt="cd ~/Notes"
 alias gg="cd ~/Code"
 alias rr="cd ~/Downloads"
+alias qq="cd ~/Config"
 
 # Commands
 alias vv="sudo pacman --color auto -S"
@@ -40,11 +41,10 @@ alias ff="clear"
 alias vi="nvim"
 
 # Manage aliases
-alias aa="cp ~/Code/reset/.aliases ~/.aliases; source ~/.bashrc"
-alias zz="nvim ~/Code/reset/.aliases"
+alias aa="cp ~/Config/.aliases ~/.aliases; source ~/.bashrc"
+alias zz="nvim ~/Config/.aliases"
 
 # Available aliases
-# alias qq=""
 # alias ww=""
 # alias xx=""
 # alias 44=""

@@ -1,4 +1,4 @@
-# reset
+# Config
 
 ### For full set up
     ./main.sh

@@ -13,7 +13,7 @@ echo -e "\n${green}Running scripts..${nc}"
 
 echo -e "\n${green}All scripts have been executed..${nc}"
 
-dconf load / < ~/Code/reset/custom-shortcuts.conf
+dconf load / < ~/Config/custom-shortcuts.conf
 
 echo -e "\n${green}Gnome keyboard shortcuts added.${nc}"
 echo -e "\n${green}Remember to run source ~/.bashrc${nc}"

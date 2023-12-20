@@ -4,7 +4,7 @@ green='\033[0;32m'
 nc='\033[0m'
 
 # Add aliases to home
-cp ~/Code/reset/.aliases ~/
+cp ~/Config/.aliases ~/
 
 # Add to bashrc
 echo -e "\n# Load custom aliases\nif [ -f ~/.aliases ]; then\n    source ~/.aliases\nfi" >> ~/.bashrc
