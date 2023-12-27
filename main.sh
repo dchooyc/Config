@@ -8,6 +8,7 @@ nc='\033[0m'
 echo -e "\n${green}Running scripts..${nc}"
 
 ./aliases.sh
+./functions.sh
 ./packages.sh
 ./magnets.sh
 

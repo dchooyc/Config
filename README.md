@@ -8,6 +8,11 @@ For setting up aliases
     ./aliases.sh
     source ~/.bashrc
 
+For setting up functions
+
+    ./functions.sh
+    source ~/.bashrc
+
 For arch packages
 
     ./packages.sh

@@ -40,8 +40,9 @@ alias ee="exit"
 alias ff="clear"
 alias vi="nvim"
 
-# Manage aliases
-alias aa="cp ~/Config/.aliases ~/.aliases; source ~/.bashrc"
+# Manage .bashrc
+alias aa="cp ~/Config/.aliases ~/; source ~/.bashrc"
+alias af="cp ~/Config/.functions ~/; source ~/.bashrc"
 alias zz="nvim ~/Config/.aliases"
 
 # Available aliases
