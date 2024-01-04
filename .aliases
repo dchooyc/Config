@@ -63,3 +63,4 @@ alias clone="git clone"
 alias entry="systemctl start sshd"
 alias sauce="source ~/.bashrc"
 alias exe="chmod u+x"
+
