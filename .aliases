@@ -32,6 +32,7 @@ alias qq="cd ~/Config"
 
 # Commands
 alias vv="sudo pacman --color auto -S"
+alias xx="sudo pacman --color auto -U"
 alias 11="python3"
 alias 22="go run"
 alias 33="yarn start"
@@ -47,7 +48,6 @@ alias zz="nvim ~/Config/.aliases"
 
 # Available aliases
 # alias ww=""
-# alias xx=""
 # alias 44=""
 # alias 55=""
 
