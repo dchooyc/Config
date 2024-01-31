@@ -57,6 +57,7 @@ alias gs="git status"
 alias gc="git commit"
 alias ga="git add"
 alias gp="git push"
+alias gr="git restore"
 alias clone="git clone"
 alias pull="git pull"
 
