@@ -37,6 +37,7 @@ alias 11="python3"
 alias 22="go run main.go"
 alias 33="yarn start"
 alias bb="cd"
+alias ww="code ."
 alias ee="exit"
 alias ff="clear"
 alias vi="nvim"
@@ -47,7 +48,6 @@ alias af="cp ~/Config/.functions ~/; source ~/.bashrc"
 alias zz="nvim ~/Config/.aliases"
 
 # Available aliases
-# alias ww=""
 # alias 44=""
 # alias 55=""
 
