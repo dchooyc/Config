@@ -15,18 +15,26 @@ echo -e "\n${green}Installing command line stuff${nc}\n"
 sudo pacman --color auto -S\
  git neovim neofetch tmux htop ffmpeg
 
+# Install yay
+echo -e "\n${green}Installing yay${nc}\n"
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
+
 # Install browsers
 echo -e "\n${green}Installing browsers${nc}\n"
-sudo pacman --color auto -S\
+yay -S\
  google-chrome firefox vivaldi tor-browser-bin
 
 # Install terminals
 echo -e "\n${green}Installing terminals${nc}\n"
-sudo pacman --color auto -S\
+yay -S\
  rxvt-unicode kitty alacritty
 
 # Install assorted
 echo -e "\n${green}Installing assorted${nc}\n"
-sudo pacman --color auto -S\
+yay -S\
  transmission-gtk cheese expressvpn pragha vlc \
- obsidian spotify visual-studio-code-bin telegram-desktop-bin
+ obsidian visual-studio-code-bin telegram-desktop-bin
