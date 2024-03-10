@@ -5,17 +5,28 @@
 green='\033[0;32m'
 nc='\033[0m'
 
-# Python related packages
-echo -e "\n${green}Installing python related packages${nc}\n"
+# Install languages
+echo -e "\n${green}Installing languages related packages${nc}\n"
 sudo pacman --color auto -S\
- python
- 
-# Golang related packages
-echo -e "\n${green}Installing golang related packages${nc}\n"
-sudo pacman --color auto -S\
- go
+ python go nodejs npm
 
-# Install neovim
-echo -e "\n${green}Installing neovim${nc}\n"
+# Install command line stuff
+echo -e "\n${green}Installing command line stuff${nc}\n"
 sudo pacman --color auto -S\
- neovim
+ git neovim neofetch tmux htop ffmpeg
+
+# Install browsers
+echo -e "\n${green}Installing browsers${nc}\n"
+sudo pacman --color auto -S\
+ google-chrome firefox vivaldi tor-browser-bin
+
+# Install terminals
+echo -e "\n${green}Installing terminals${nc}\n"
+sudo pacman --color auto -S\
+ rxvt-unicode kitty alacritty
+
+# Install assorted
+echo -e "\n${green}Installing assorted${nc}\n"
+sudo pacman --color auto -S\
+ transmission-gtk cheese expressvpn pragha vlc \
+ obsidian spotify visual-studio-code-bin telegram-desktop-bin
