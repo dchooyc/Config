@@ -7,16 +7,16 @@ alias kimport="dconf load / < ~/Config/custom-shortcuts.conf"
 # Network stuff
 alias ping="ping -c 5"
 alias ip="ip -c=always"
-alias ipa="ip -c=always a"
-alias ipn="ip -c=always neigh show"
+alias ipa="ip a"
+alias ipn="ip neigh show"
 
 # VPN stuff
 alias vpn="expressvpn"
-alias vpna="expressvpn activate"
-alias vpnc="expressvpn connect"
-alias vpnd="expressvpn disconnect"
-alias vpns="expressvpn status"
-alias vpnl="expressvpn ls"
+alias vpna="vpn activate"
+alias vpnc="vpn connect"
+alias vpnd="vpn disconnect"
+alias vpns="vpn status"
+alias vpnl="vpn ls"
 
 # Change directory stuff
 alias ..="cd .."
@@ -30,26 +30,34 @@ alias gg="cd ~/Code"
 alias rr="cd ~/Downloads"
 alias qq="cd ~/Config"
 
-# Commands
-alias vv="sudo pacman --color auto -S"
-alias xx="sudo pacman --color auto -U"
+# Pacman
+alias pm="sudo pacman --color auto"
+alias vv="pm -S"
+alias xx="pm -U"
+alias dl="pm -R"
+alias uu="pm -Syyu"
+
+# Numbers commands
+alias 00="grep --color=auto"
 alias 11="python3"
 alias 22="go run main.go"
 alias 33="yarn start"
+alias 66="kill -9"
+
+# Letters commands
 alias bb="cd"
 alias ww="code ."
 alias ee="exit"
 alias ff="clear"
 alias vi="nvim"
+alias l="ls --color=auto"
+alias ll="l -la"
+alias pp="ps aux | 00 -v grep | 00 -i"
 
 # Manage .bashrc
 alias aa="cp ~/Config/.aliases ~/; source ~/.bashrc"
 alias af="cp ~/Config/.functions ~/; source ~/.bashrc"
 alias zz="nvim ~/Config/.aliases"
-
-# Available aliases
-# alias 44=""
-# alias 55=""
 
 # Git stuff
 alias gi="git init"
