@@ -9,11 +9,12 @@ echo -e "\n${green}Running scripts..${nc}"
 
 # Set up .bashrc
 cp ~/Config/.aliases ~/Config/.functions ~/Config/.bashrc ~/
+source ~/.bashrc
 
 # Enable bluetooth
 sudo pacman --color auto -S\
  bluez bluez-utils bluez-deprecated-tools
-sudo systemctl enable bluetooth
+ess bluetooth
 
 # Install languages
 sudo pacman --color auto -S\
@@ -44,6 +45,10 @@ am vivaldi
 
 # Install editor
 am visual-studio-code-bin
+
+# Install snap
+am snapd
+ess snapd
 
 # Install yay
 am yay

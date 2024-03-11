@@ -10,3 +10,10 @@ am() {
     makepkg -si
     cd ..
 }
+
+# systemctl enable start status
+ess() {
+    sudo systemctl enable $1
+    sudo systemctl start $1
+    sudo systemctl status $1
+}
