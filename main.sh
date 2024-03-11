@@ -22,6 +22,7 @@ sudo pacman --color auto -S\
 # Install command line stuff
 sudo pacman --color auto -S\
  git neovim neofetch tmux htop ffmpeg base-devel
+git config --global core.editor "nvim"
 
 # Install transmission
 sudo pacman --color auto -S\
