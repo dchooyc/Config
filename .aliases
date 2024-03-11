@@ -53,6 +53,7 @@ alias vi="nvim"
 alias l="ls --color=auto"
 alias ll="l -la"
 alias pp="ps aux | 00 -v grep | 00 -i"
+alias mp="makepkg -si"
 
 # Manage .bashrc
 alias aa="cp ~/Config/.aliases ~/; source ~/.bashrc"
@@ -73,4 +74,3 @@ alias pull="git pull"
 alias entry="systemctl start sshd"
 alias sauce="source ~/.bashrc"
 alias exe="chmod u+x"
-
