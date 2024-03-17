@@ -33,7 +33,7 @@ xdg-mime query default x-scheme-handler/magnet
 
 # Install assorted
 sudo pacman --color auto -S\
- firefox vlc
+ firefox vlc imagewriter
 
 # Start manual installs
 cd
