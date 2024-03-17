@@ -24,6 +24,9 @@ sudo pacman --color auto -S\
 sudo pacman --color auto -S\
  git neovim neofetch tmux htop ffmpeg base-devel
 git config --global core.editor "nvim"
+git config --global user.email "dchooyc@gmail.com"
+git config --global user.name "Daniel Choo"
+git remote set-url origin git@github.com:dchooyc/Config.git
 
 # Install transmission
 sudo pacman --color auto -S\
@@ -68,5 +71,11 @@ source ~/.bashrc
 
 # Set up keyboard shortcuts
 dconf load / < ~/Config/custom-shortcuts.conf
+
+# Set ssh keys
+ssh-keygen -t ed25519 -C "dchooyc@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
 
 echo -e "\n${green}Script has completed run${nc}"
