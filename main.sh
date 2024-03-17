@@ -9,7 +9,6 @@ echo -e "\n${green}Running script..${nc}"
 
 # Set up .bashrc
 cp ~/Config/.aliases ~/Config/.functions ~/Config/.bashrc ~/
-cp -r ~/Config/.conf ~/.config
 source ~/.bashrc
 
 # Enable bluetooth
@@ -46,6 +45,7 @@ am vivaldi
 
 # Install editor
 am visual-studio-code-bin
+cp ~/Config/.conf/vscode/keybindings.json ~/.config/Code/User/
 
 # Install snap
 am snapd
@@ -57,6 +57,7 @@ am yay
 # Install terminals
 yay -S\
  rxvt-unicode kitty alacritty
+cp -r ~/Config/.conf/kitty ~/.config/
 
 # Install assorted
 yay -S\
