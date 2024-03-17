@@ -9,6 +9,7 @@ echo -e "\n${green}Running script..${nc}"
 
 # Set up .bashrc
 cp ~/Config/.aliases ~/Config/.functions ~/Config/.bashrc ~/
+cp -r ~/Config/.conf ~/.config
 source ~/.bashrc
 
 # Enable bluetooth
