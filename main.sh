@@ -34,10 +34,6 @@ sudo pacman --color auto -S\
 xdg-mime default transmission-gtk.desktop x-scheme-handler/magnet
 xdg-mime query default x-scheme-handler/magnet
 
-# Install assorted
-sudo pacman --color auto -S\
- firefox vlc imagewriter
-
 # Start manual installs
 cd
 mm Packages
@@ -53,6 +49,12 @@ cp ~/Config/.conf/vscode/keybindings.json ~/.config/Code/User/
 # Install snap
 am snapd
 ess snapd
+
+# Install vlc
+am vlc
+
+# Install imagewriter
+am imagewriter
 
 # Install yay
 am yay
