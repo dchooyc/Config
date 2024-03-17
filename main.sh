@@ -1,11 +1,11 @@
 #!/bin/bash
-# This runs all the scripts
+# Installs packages
 
 # Set colour for echo
 green='\033[0;32m'
 nc='\033[0m'
 
-echo -e "\n${green}Running scripts..${nc}"
+echo -e "\n${green}Running script..${nc}"
 
 # Set up .bashrc
 cp ~/Config/.aliases ~/Config/.functions ~/Config/.bashrc ~/
@@ -61,11 +61,10 @@ yay -S\
 yay -S\
  obsidian telegram-desktop-bin
 
-cd Config
+cd ~/Config
 source ~/.bashrc
 
 # Set up keyboard shortcuts
 dconf load / < ~/Config/custom-shortcuts.conf
-echo -e "\n${green}Gnome keyboard shortcuts added.${nc}"
 
-echo -e "\n${green}All scripts have been executed..${nc}"
+echo -e "\n${green}Script has completed run${nc}"
