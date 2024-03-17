@@ -29,6 +29,7 @@ alias tt="cd ~/Notes"
 alias gg="cd ~/Code"
 alias rr="cd ~/Downloads"
 alias qq="cd ~/Config"
+alias yy="cd ~/Packages"
 
 # Pacman
 alias pm="sudo pacman --color auto"
