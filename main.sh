@@ -27,6 +27,7 @@ git config --global core.editor "nvim"
 git config --global user.email "dchooyc@gmail.com"
 git config --global user.name "Daniel Choo"
 git remote set-url origin git@github.com:dchooyc/Config.git
+cp -r ~/Config/.conf/nvim ~/.config/
 
 # Install transmission
 sudo pacman --color auto -S\
