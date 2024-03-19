@@ -67,7 +67,7 @@ cp -r ~/Config/.conf/kitty ~/.config/
 
 # Install assorted
 yay -S\
- obsidian telegram-desktop-bin
+ obsidian telegram-desktop-bin firefox
 
 cd ~/Config
 source ~/.bashrc
