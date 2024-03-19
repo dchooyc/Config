@@ -45,6 +45,7 @@ am vivaldi
 
 # Install editor
 am visual-studio-code-bin
+mkdir ~/.config/Code/User
 cp ~/Config/.conf/vscode/keybindings.json ~/.config/Code/User/
 
 # Install snap
