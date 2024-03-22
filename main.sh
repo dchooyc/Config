@@ -49,8 +49,6 @@ yyy google-chrome vivaldi firefox
 
 # Install editor
 yyy visual-studio-code-bin
-mkdir ~/.config/Code/User
-cp ~/Config/.conf/vscode/keybindings.json ~/.config/Code/User/
 
 # Install snap
 yyy snapd

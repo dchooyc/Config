@@ -78,3 +78,6 @@ alias pull="git pull"
 alias entry="systemctl start sshd"
 alias sauce="source ~/.bashrc"
 alias exe="chmod u+x"
+
+# Vscode keybindings
+alias vskb="cp ~/Config/.conf/vscode/keybindings.json ~/.config/Code/User/"
