@@ -15,14 +15,14 @@ source ~/.bashrc
 shopt -s expand_aliases
 
 # Enable bluetooth
-vvv bluez bluez-utils bluez-deprecated-tools
+vvv bluez-utils bluez-deprecated-tools
 ess bluetooth
 
 # Install languages
-vvv python go nodejs npm
+vvv go nodejs npm
 
 # Install command line stuff
-vvv git neovim neofetch tmux htop ffmpeg base-devel noto-fonts-cjk
+vvv neovim neofetch tmux noto-fonts-cjk
 git config --global core.editor "nvim"
 git config --global user.email "dchooyc@gmail.com"
 git config --global user.name "Daniel Choo"
