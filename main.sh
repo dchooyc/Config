@@ -30,7 +30,7 @@ git remote set-url origin git@github.com:dchooyc/Config.git
 cp -r ~/Config/.conf/nvim ~/.config/
 
 # Install media software
-vvv audacious vlc imagewriter
+vvv audacious vlc
 
 # Install transmission
 vvv transmission-gtk
@@ -41,28 +41,27 @@ xdg-mime query default x-scheme-handler/magnet
 cd
 mm Packages
 
+# Install yay
+amn yay
+
 # Install browsers
-amn google-chrome
-amn vivaldi
+yyy google-chrome vivaldi firefox
 
 # Install editor
-amn visual-studio-code-bin
+yyy visual-studio-code-bin
 mkdir ~/.config/Code/User
 cp ~/Config/.conf/vscode/keybindings.json ~/.config/Code/User/
 
 # Install snap
-amn snapd
+yyy snapd
 ess snapd
-
-# Install yay
-amn yay
 
 # Install terminals
 yyy rxvt-unicode kitty alacritty
 cp -r ~/Config/.conf/kitty ~/.config/
 
 # Install assorted
-yyy obsidian telegram-desktop-bin firefox
+yyy obsidian telegram-desktop-bin imagewriter
 
 cd ~/Config
 
