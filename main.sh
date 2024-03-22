@@ -37,6 +37,12 @@ vvv transmission-gtk
 xdg-mime default transmission-gtk.desktop x-scheme-handler/magnet
 xdg-mime query default x-scheme-handler/magnet
 
+# Install virtualbox
+vvv virtualbox-host-modules-arch
+vvv virtualbox
+sudo modprobe vboxdrv
+sudo usermod -aG vboxusers $USER
+
 # Start manual installs
 cd
 mm Packages
