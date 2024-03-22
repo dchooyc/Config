@@ -22,7 +22,7 @@ sudo pacman --color auto -S\
 
 # Install command line stuff
 sudo pacman --color auto -S\
- git neovim neofetch tmux htop ffmpeg base-devel
+ git neovim neofetch tmux htop ffmpeg base-devel noto-fonts-cjk
 git config --global core.editor "nvim"
 git config --global user.email "dchooyc@gmail.com"
 git config --global user.name "Daniel Choo"
