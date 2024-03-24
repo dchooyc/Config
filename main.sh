@@ -67,6 +67,9 @@ cp -r ~/Config/.conf/kitty ~/.config/
 # Install assorted
 yyy obsidian telegram-desktop-bin imagewriter drawio-desktop
 
+# Install via
+yyy via-bin
+
 cd ~/Config
 
 # Set up keyboard shortcuts
