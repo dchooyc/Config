@@ -22,7 +22,7 @@ ess bluetooth
 vvv go nodejs npm
 
 # Install command line stuff
-vvv neovim neofetch tmux noto-fonts-cjk
+vvv neovim neofetch tmux noto-fonts-cjk ntfs-3g
 git config --global core.editor "nvim"
 git config --global user.email "dchooyc@gmail.com"
 git config --global user.name "Daniel Choo"
@@ -65,7 +65,7 @@ yyy rxvt-unicode kitty alacritty
 cp -r ~/Config/.conf/kitty ~/.config/
 
 # Install assorted
-yyy obsidian telegram-desktop-bin imagewriter
+yyy obsidian telegram-desktop-bin imagewriter drawio-desktop
 
 cd ~/Config
 
