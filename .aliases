@@ -1,8 +1,13 @@
-# Export custom keyboard shortcuts for gnome
+# Gnome custom keyboard shortcuts
 alias kexport="dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' > ~/Config/custom-shortcuts.conf"
-
-# Import custom keyboard shortcuts for gnome
 alias kimport="dconf load / < ~/Config/custom-shortcuts.conf"
+
+# Bashrc stuff
+alias sauce="source ~/.bashrc"
+alias ada="cp ~/Config/.aliases ~/"
+alias adf="cp ~/Config/.functions ~/"
+alias aa="ada; adf; sauce"
+alias zz="nvim ~/Config/.aliases"
 
 # Network stuff
 alias ping="ping -c 5"
@@ -51,17 +56,13 @@ alias 66="kill -9"
 alias bb="cd"
 alias ww="code ."
 alias ee="exit"
+alias ex="chmod u+x"
 alias ff="clear"
 alias vi="nvim"
 alias l="ls --color=auto"
 alias ll="l -la"
 alias pp="ps aux | 00 -v grep | 00 -i"
 alias mp="makepkg -si"
-
-# Manage .bashrc
-alias aa="cp ~/Config/.aliases ~/; source ~/.bashrc"
-alias af="cp ~/Config/.functions ~/; source ~/.bashrc"
-alias zz="nvim ~/Config/.aliases"
 
 # Git stuff
 alias gi="git init"
@@ -74,10 +75,12 @@ alias gr="git restore"
 alias clone="git clone"
 alias pull="git pull"
 
-# Assorted stuff
-alias entry="systemctl start sshd"
-alias sauce="source ~/.bashrc"
-alias exe="chmod u+x"
-
-# Vscode keybindings
-alias vskb="cp ~/Config/.conf/vscode/keybindings.json ~/.config/Code/User/"
+# Vscode
+alias vskbi="cp ~/Config/.conf/vscode/keybindings.json ~/.config/Code/User/"
+alias vskbe="cp ~/.config/Code/User/keybindings.json ~/Config/.conf/vscode/"
+alias vsexi="code --install-extension $(cat ~/Config/.conf/vscode/extensions)"
+alias vsexe="code --list-extensions > ~/Config/.conf/vscode/extensions"
+alias vssni="cp -r ~/Config/.conf/vscode/snippets ~/.config/Code/User/"
+alias vssne="cp -r ~/.config/Code/User/snippets ~/Config/.conf/vscode/"
+alias vsi="vskbi; vsexi; vssni"
+alias vse="vskbe; vsexe; vssne"
