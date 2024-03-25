@@ -4,76 +4,62 @@
 # Set colour for echo
 green='\033[0;32m'
 nc='\033[0m'
-
 echo -e "\n${green}Running script..${nc}"
 
-# Set up .bashrc
-cp ~/Config/.aliases ~/Config/.functions ~/Config/.bashrc ~/
-source ~/.bashrc
+# Official packages
+bluetooth="bluez-utils bluez-deprecated-tools"
+languages="go nodejs npm"
+commandline="neovim neofetch tmux"
+assorted="noto-fonts-cjk ntfs-3g"
+media="audacious vlc"
+torrents="transmission-gtk"
+virtualbox="virtualbox-host-modules-arch virtualbox"
 
-# Enable aliases
+# AUR packages
+aur_browsers="google-chrome vivaldi firefox"
+aur_editors="visual-studio-code-bin"
+aur_terminals="rxvt-unicode kitty alacritty"
+aur_assorted="obsidian telegram-desktop-bin imagewriter drawio-desktop via-bin"
+
+# Set up
+cp ~/Config/.aliases ~/Config/.functions ~/Config/.bashrc ~/; source ~/.bashrc
 shopt -s expand_aliases
+sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 20/' /etc/pacman.conf
+
+# Install official
+vvv $bluetooth $languages $commandline $assorted $media $torrents $virtualbox
 
 # Enable bluetooth
-vvv bluez-utils bluez-deprecated-tools
 ess bluetooth
 
-# Install languages
-vvv go nodejs npm
-
-# Install command line stuff
-vvv neovim neofetch tmux noto-fonts-cjk ntfs-3g
+# Configure git
 git config --global core.editor "nvim"
 git config --global user.email "dchooyc@gmail.com"
 git config --global user.name "Daniel Choo"
 git remote set-url origin git@github.com:dchooyc/Config.git
+
+# Neovim config
 cp -r ~/Config/.conf/nvim ~/.config/
 
-# Install media software
-vvv audacious vlc
-
-# Install transmission
-vvv transmission-gtk
+# Set transmission as default
 xdg-mime default transmission-gtk.desktop x-scheme-handler/magnet
 xdg-mime query default x-scheme-handler/magnet
 
-# Install virtualbox
-vvv virtualbox-host-modules-arch
-vvv virtualbox
+# Set up virtualbox
 sudo modprobe vboxdrv
 sudo usermod -aG vboxusers $USER
 
-# Start manual installs
-cd
-mm Packages
-
 # Install yay
-amn yay
+cd; mm Packages; amn yay; cd ~/Config
 
-# Install browsers
-yyy google-chrome vivaldi firefox
+# Install aur packages with yay
+yyy $aur_browsers $aur_editors $aur_terminals $aur_assorted
 
-# Install editor
-yyy visual-studio-code-bin
-
-# Install snap
-yyy snapd
-ess snapd
-
-# Install terminals
-yyy rxvt-unicode kitty alacritty
+# Kitty config
 cp -r ~/Config/.conf/kitty ~/.config/
 
-# Install assorted
-yyy obsidian telegram-desktop-bin imagewriter drawio-desktop
-
-# Install via
-yyy via-bin
-
-cd ~/Config
-
 # Set up keyboard shortcuts
-dconf load / < ~/Config/custom-shortcuts.conf
+kimport
 
 # Set ssh keys
 ssh-keygen -t ed25519 -C "dchooyc@gmail.com"
