@@ -78,7 +78,7 @@ alias pull="git pull"
 # Vscode
 alias vskbi="cp ~/Config/.conf/vscode/keybindings.json ~/.config/Code/User/"
 alias vskbe="cp ~/.config/Code/User/keybindings.json ~/Config/.conf/vscode/"
-alias vsexi="code --install-extension $(cat ~/Config/.conf/vscode/extensions)"
+alias vsexi="map code --install-extension ~/Config/.conf/vscode/extensions"
 alias vsexe="code --list-extensions > ~/Config/.conf/vscode/extensions"
 alias vssni="cp -r ~/Config/.conf/vscode/snippets ~/.config/Code/User/"
 alias vssne="cp -r ~/.config/Code/User/snippets ~/Config/.conf/vscode/"

@@ -25,3 +25,15 @@ ess() {
     sudo systemctl start $1
     sudo systemctl status $1
 }
+
+# joins file lines with a space
+range() {
+    tr '\n' ' ' < $1
+}
+
+# executes command for each val in target
+map() {
+    local cmd=("${@:1:$#-1}")
+    local target="${@:$#}"
+    for val in $(range $target); do ${cmd[@]} $val; done
+}
