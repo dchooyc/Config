@@ -22,8 +22,7 @@ aur_terminals="rxvt-unicode kitty alacritty"
 aur_assorted="obsidian telegram-desktop-bin imagewriter drawio-desktop via-bin"
 
 # Set up
-cp ~/Config/.aliases ~/Config/.functions ~/Config/.bashrc ~/; source ~/.bashrc
-shopt -s expand_aliases
+cp ~/Config/.bashrc ~; source ~/.bashrc; shopt -s expand_aliases
 sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 20/' /etc/pacman.conf
 
 # Install official
@@ -39,7 +38,7 @@ git config --global user.name "Daniel Choo"
 git remote set-url origin git@github.com:dchooyc/Config.git
 
 # Neovim config
-cp -r ~/Config/.conf/nvim ~/.config/
+cp -r $CONF_FILES/nvim ~/.config/
 
 # Set transmission as default
 xdg-mime default transmission-gtk.desktop x-scheme-handler/magnet
@@ -50,13 +49,13 @@ sudo modprobe vboxdrv
 sudo usermod -aG vboxusers $USER
 
 # Install yay
-cd; mm Packages; amn yay; cd ~/Config
+cd; mm Packages; amn yay; cd $CONF
 
 # Install aur packages with yay
 yyy $aur_browsers $aur_editors $aur_terminals $aur_assorted
 
 # Kitty config
-cp -r ~/Config/.conf/kitty ~/.config/
+cp -r $CONF_FILES/kitty ~/.config/
 
 # Set up keyboard shortcuts
 kimport
