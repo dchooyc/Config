@@ -23,9 +23,9 @@ aur_assorted="obsidian telegram-desktop-bin imagewriter drawio-desktop via-bin"
 aur_packages="$aur_browsers $aur_editors $aur_terminals $aur_assorted"
 
 # Set up shell env and install with pacman
-cp ~/Config/.bashrc ~; source ~/.bashrc; shopt -s expand_aliases; kimport
+cp ~/Config/.bashrc ~; source ~/.bashrc; shopt -s expand_aliases
 sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 20/' /etc/pacman.conf
-uuu; vvv $official; ess bluetooth; ni
+kimport; uuu; vvv $official; ess bluetooth; ni
 
 # Configure git
 gconfg core.editor "nvim"
