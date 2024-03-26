@@ -1,8 +1,8 @@
 # Filepath exports
-export CONF_MAIN="~/Config/.conf"
-export CONF_GNOME="$CONF_MAIN/gnome/custom-shortcuts.conf"
-export CONF_VSCODE="$CONF_MAIN/vscode"
-export VSCODE_USER="~/.config/Code/User"
+export CONF_FILES="$CONF/.conf"
+export CONF_GNOME="$CONF_FILES/gnome/custom-shortcuts.conf"
+export CONF_VSCODE="$CONF_FILES/vscode"
+export VSCODE_USER="$HOME/.config/Code/User"
 
 # Gnome custom keyboard shortcuts
 alias kexport="dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' > $CONF_GNOME"

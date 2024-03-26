@@ -1,6 +1,6 @@
 # Bashrc stuff
 alias sz="source ~/.bashrc"
-alias zz="nvim ~/Config/.aliases"
+alias zz="nvim $CONF/.aliases"
 
 # Numbers commands
 alias 00="grep --color=auto"
