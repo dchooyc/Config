@@ -1,0 +1,11 @@
+# Git stuff
+alias gi="git init"
+alias gs="git status"
+alias gc="git commit"
+alias gcm="gc -m"
+alias ga="git add"
+alias gp="git push"
+alias gr="git restore"
+alias clone="git clone"
+alias pull="git pull"
+alias gconfg="git config --global"

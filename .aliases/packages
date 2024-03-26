@@ -5,6 +5,7 @@ alias vvv="vv --noconfirm"
 alias xx="pm -U"
 alias dl="pm -R"
 alias uu="pm -Syyu"
+alias uuu="uu --noconfirm"
 
 # Yay
 alias yy="yay -S"

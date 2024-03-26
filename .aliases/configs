@@ -17,3 +17,11 @@ alias vssni="cp -r $CONF_VSCODE/snippets $VSCODE_USER"
 alias vssne="cp -r $VSCODE_USER/snippets $CONF_VSCODE"
 alias vsi="vskbi; vsexi; vssni"
 alias vse="vskbe; vsexe; vssne"
+
+# Nvim
+alias ni="cp -r $CONF_FILES/nvim ~/.config/"
+alias ne="cp -r ~/.config/nvim $CONF_FILES"
+
+# Kitty
+alias kti="cp -r $CONF_FILES/kitty ~/.config/"
+alias kte="cp -r ~/.config/kitty $CONF_FILES"

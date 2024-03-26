@@ -11,34 +11,27 @@ bluetooth="bluez-utils bluez-deprecated-tools"
 languages="go nodejs npm"
 commandline="neovim neofetch tmux"
 assorted="noto-fonts-cjk ntfs-3g"
-media="audacious vlc"
-torrents="transmission-gtk"
+media="audacious vlc transmission-gtk"
 virtualbox="virtualbox-host-modules-arch virtualbox"
+official="$bluetooth $languages $commandline $assorted $media $virtualbox"
 
 # AUR packages
 aur_browsers="google-chrome vivaldi firefox"
 aur_editors="visual-studio-code-bin"
 aur_terminals="rxvt-unicode kitty alacritty"
 aur_assorted="obsidian telegram-desktop-bin imagewriter drawio-desktop via-bin"
+aur_packages="$aur_browsers $aur_editors $aur_terminals $aur_assorted"
 
-# Set up
-cp ~/Config/.bashrc ~; source ~/.bashrc; shopt -s expand_aliases
+# Set up shell env and install with pacman
+cp ~/Config/.bashrc ~; source ~/.bashrc; shopt -s expand_aliases; kimport
 sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 20/' /etc/pacman.conf
-
-# Install official
-vvv $bluetooth $languages $commandline $assorted $media $torrents $virtualbox
-
-# Enable bluetooth
-ess bluetooth
+uuu; vvv $official; ess bluetooth; ni
 
 # Configure git
-git config --global core.editor "nvim"
-git config --global user.email "dchooyc@gmail.com"
-git config --global user.name "Daniel Choo"
+gconfg core.editor "nvim"
+gconfg user.email "dchooyc@gmail.com"
+gconfg user.name "Daniel Choo"
 git remote set-url origin git@github.com:dchooyc/Config.git
-
-# Neovim config
-cp -r $CONF_FILES/nvim ~/.config/
 
 # Set transmission as default
 xdg-mime default transmission-gtk.desktop x-scheme-handler/magnet
@@ -48,17 +41,8 @@ xdg-mime query default x-scheme-handler/magnet
 sudo modprobe vboxdrv
 sudo usermod -aG vboxusers $USER
 
-# Install yay
-cd; mm Packages; amn yay; cd $CONF
-
-# Install aur packages with yay
-yyy $aur_browsers $aur_editors $aur_terminals $aur_assorted
-
-# Kitty config
-cp -r $CONF_FILES/kitty ~/.config/
-
-# Set up keyboard shortcuts
-kimport
+# Install yay and install packages with yay
+cd; mm Packages; amn yay; cd $CONF; yyy $aur_packages; kti
 
 # Set ssh keys
 ssh-keygen -t ed25519 -C "dchooyc@gmail.com"
