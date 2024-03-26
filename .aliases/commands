@@ -1,0 +1,33 @@
+# Bashrc stuff
+alias sz="source ~/.bashrc"
+alias zz="nvim ~/Config/.aliases"
+
+# Numbers commands
+alias 00="grep --color=auto"
+alias 11="python3"
+alias 22="go run main.go"
+alias 33="yarn start"
+alias 66="kill -9"
+
+# Letters commands
+alias bb="cd"
+alias ww="code ."
+alias ee="exit"
+alias ex="chmod u+x"
+alias ff="clear"
+alias vi="nvim"
+alias l="ls --color=auto"
+alias ll="l -la"
+alias pp="ps aux | 00 -v grep | 00 -i"
+alias mp="makepkg -si"
+
+# Git stuff
+alias gi="git init"
+alias gs="git status"
+alias gc="git commit"
+alias gcm="gc -m"
+alias ga="git add"
+alias gp="git push"
+alias gr="git restore"
+alias clone="git clone"
+alias pull="git pull"

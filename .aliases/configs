@@ -1,0 +1,19 @@
+# Filepath exports
+export CONF_MAIN="~/Config/.conf"
+export CONF_GNOME="$CONF_MAIN/gnome/custom-shortcuts.conf"
+export CONF_VSCODE="$CONF_MAIN/vscode"
+export VSCODE_USER="~/.config/Code/User"
+
+# Gnome custom keyboard shortcuts
+alias kexport="dconf dump / | sed -n '/\[org.gnome.settings-daemon.plugins.media-keys/,/^$/p' > $CONF_GNOME"
+alias kimport="dconf load / < $CONF_GNOME"
+
+# Vscode
+alias vskbi="cp $CONF_VSCODE/keybindings.json $VSCODE_USER"
+alias vskbe="cp $VSCODE_USER/keybindings.json $CONF_VSCODE"
+alias vsexi="map code --install-extension $CONF_VSCODE/extensions"
+alias vsexe="code --list-extensions > $CONF_VSCODE/extensions"
+alias vssni="cp -r $CONF_VSCODE/snippets $VSCODE_USER"
+alias vssne="cp -r $VSCODE_USER/snippets $CONF_VSCODE"
+alias vsi="vskbi; vsexi; vssni"
+alias vse="vskbe; vsexe; vssne"

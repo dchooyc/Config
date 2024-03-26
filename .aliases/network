@@ -1,0 +1,13 @@
+# Network stuff
+alias ping="ping -c 5"
+alias ip="ip -c=always"
+alias ipa="ip a"
+alias ipn="ip neigh show"
+
+# VPN stuff
+alias vpn="expressvpn"
+alias vpna="vpn activate"
+alias vpnc="vpn connect"
+alias vpnd="vpn disconnect"
+alias vpns="vpn status"
+alias vpnl="vpn ls"
