@@ -32,18 +32,17 @@ kimport; uuu; vvv $official; ess bluetooth; ni
 gconfg core.editor "nvim"
 gconfg user.email "dchooyc@gmail.com"
 gconfg user.name "Daniel Choo"
-git remote set-url origin git@github.com:dchooyc/Config.git
+git -C $CONF remote set-url origin git@github.com:dchooyc/Config.git
 
 # Set transmission as default
 xdg-mime default transmission-gtk.desktop x-scheme-handler/magnet
 xdg-mime query default x-scheme-handler/magnet
 
 # Set up virtualbox
-sudo modprobe vboxdrv
 sudo usermod -aG vboxusers $USER
 
 # Install yay and install packages with yay
-cd; mm Packages; amn yay; cd $CONF; yyy $aur_packages; kti
+mm Packages; amn yay; cd; yyy $aur_packages; kti
 
 # Set ssh keys
 ssh-keygen -t ed25519 -C "dchooyc@gmail.com"

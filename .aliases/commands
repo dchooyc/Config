@@ -1,5 +1,5 @@
 # Bashrc stuff
-alias sz="source ~/.bashrc"
+alias aa="source ~/.bashrc"
 alias zz="nvim $CONF/.aliases"
 
 # Numbers commands

@@ -1,0 +1,15 @@
+# AUR manual install
+am() {
+    git clone "https://aur.archlinux.org/$1.git"
+    cd $1
+    makepkg -s && sudo pacman -U *.pkg.tar.zst
+    cd ..
+}
+
+# AUR manual install noconfim
+amn() {
+    git clone "https://aur.archlinux.org/$1.git"
+    cd $1
+    makepkg -s && sudo pacman -U *.pkg.tar.zst --noconfirm
+    cd ..
+}

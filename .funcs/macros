@@ -3,22 +3,6 @@ mm() {
     mkdir -p "$1" && cd "$1"
 }
 
-# AUR manual install
-am() {
-    git clone "https://aur.archlinux.org/$1.git"
-    cd $1
-    makepkg -s && sudo pacman -U *.pkg.tar.zst
-    cd ..
-}
-
-# AUR manual install noconfim
-amn() {
-    git clone "https://aur.archlinux.org/$1.git"
-    cd $1
-    makepkg -s && sudo pacman -U *.pkg.tar.zst --noconfirm
-    cd ..
-}
-
 # systemctl enable start status
 ess() {
     sudo systemctl enable $1
