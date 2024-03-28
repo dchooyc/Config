@@ -23,7 +23,8 @@ aur_assorted="obsidian telegram-desktop-bin imagewriter drawio-desktop via-bin"
 aur_packages="$aur_browsers $aur_editors $aur_terminals $aur_assorted"
 
 # Set up shell env and install with pacman
-cp ~/Config/.bashrc ~; source ~/.bashrc; shopt -s expand_aliases
+brc="$HOME/.bashrc"
+echo "source $HOME/Config/main" > $brc; source $brc; shopt -s expand_aliases
 sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 20/' /etc/pacman.conf
 kimport; uuu; vvv $official; ess bluetooth; ni
 

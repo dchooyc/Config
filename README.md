@@ -40,5 +40,7 @@ reboot
 
 ### Config
 ```
-./main.sh
+sudo pacman -S git
+git clone https://github.com/dchooyc/Config.git
+Config/ure
 ```
