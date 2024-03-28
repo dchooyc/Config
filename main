@@ -1,9 +1,12 @@
 export CONF="$HOME/Config"
+export MEMO="$HOME/Memory"
 
 aliases=$(find $CONF/.aliases -type f)
 for a in $aliases; do source $a; done
 
 funcs=$(find $CONF/.funcs -type f)
 for f in $funcs; do source $f; done
+
+ifs $MEMO/main
 
 neofetch

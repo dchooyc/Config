@@ -40,7 +40,7 @@ reboot
 
 ### Config
 ```
-sudo pacman -S git
+sudo pacman -S --noconfirm git
 git clone https://github.com/dchooyc/Config.git
-Config/ure
+Config/start
 ```

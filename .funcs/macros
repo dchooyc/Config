@@ -21,3 +21,8 @@ map() {
     local target="${@:$#}"
     for val in $(range $target); do ${cmd[@]} $val; done
 }
+
+# if exists source it
+ifs() {
+    [ -f $1 ] && source $1
+}
