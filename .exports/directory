@@ -1,0 +1,4 @@
+# exported directories
+export CONF="$HOME/Config"
+export MEMO="$HOME/Memory"
+export TMPL="$HOME/Templates"
