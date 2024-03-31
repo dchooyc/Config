@@ -1,0 +1,28 @@
+# echos in color specified
+ec() {
+    local color
+    local nc="\e[0m"
+    local text="${@:2:$#}"
+
+    case "$1" in
+        black) color="\e[0;30m" ;;
+        red) color="\e[0;31m" ;;
+        yellow) color="\e[0;33m" ;;
+        blue) color="\e[0;34m" ;;
+        purple) color="\e[0;35m" ;;
+        cyan) color="\e[0;36m" ;;
+        white) color="\e[0;37m" ;;
+        *) color="\e[0;32m" ;;
+    esac
+
+    echo -e "${color}$text${nc}"
+}
+
+# echo in color but in block
+ecblock() {
+    ec $1 "##########################################"
+    echo
+    ec ${@:1:$#}
+    echo
+    ec $1 "##########################################"
+}
