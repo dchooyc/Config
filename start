@@ -11,11 +11,13 @@ ecblock g "Set up shell env successful"
 
 # Install official stuff
 official=$(range $CONF/.packages/official)
-if kimport && uuu && vvv $official && ess bluetooth && ni; then
+if kimport && uuu && vvv $official && ni; then
     ecblock yellow "Set up official stuff successful"
 else
-    ecr "Failure in the official stuff"; exit
+    ecr "Failure in the official stuff"
 fi
+
+ess bluetooth
 
 # Configure git
 gconfg core.editor "nvim"; git1=$?
