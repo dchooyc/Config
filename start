@@ -11,13 +11,11 @@ ecblock g "Set up shell env successful"
 
 # Install official stuff
 official=$(range $CONF/.packages/official)
-if kimport && uuu && vvv $official && ni; then
+if uuu && vvv $official; then
     ecblock yellow "Set up official stuff successful"
 else
     ecr "Failure in the official stuff"
 fi
-
-ess bluetooth
 
 # Configure git
 gconfg core.editor "nvim"; git1=$?
@@ -44,11 +42,14 @@ fi
 
 # Install aur packages
 aur_packages=$(range $CONF/.packages/aur)
-if mm Packages && amn yay && cd && yyy $aur_packages && kti; then
+if mm Packages && amn yay && cd && yyy $aur_packages; then
     ecblock yellow "Aur packages installed successfully"
 else
     ecr "Failure in the aur packages stuff"
 fi
+
+# Import .confs and enable bluetooth
+kimport; ni; kti; ess bluetooth
 
 # Set ssh keys
 ssh-keygen -t ed25519 -C "dchooyc@gmail.com"
