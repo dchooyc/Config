@@ -1,0 +1,6 @@
+# echo in colors
+alias ecg="ec g"
+alias ecr="ec red"
+alias ecb="ec blue"
+alias ecy="ec yellow"
+alias ecp="ec purple"
