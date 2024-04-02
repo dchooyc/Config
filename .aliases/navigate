@@ -3,6 +3,7 @@ alias tt="cd ~/Notes"
 alias gg="cd ~/Code"
 alias rr="cd ~/Downloads"
 alias qq="cd ~/Config"
+alias kk="cd ~/Work"
 
 # Change directory stuff
 alias ..="cd .."
