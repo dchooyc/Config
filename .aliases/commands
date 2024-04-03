@@ -7,6 +7,7 @@ alias 00="grep --color=auto"
 alias 11="python3"
 alias 22="go run main.go"
 alias 33="yarn start"
+alias 44="npm run dev"
 alias 66="kill -9"
 
 # Letters commands
