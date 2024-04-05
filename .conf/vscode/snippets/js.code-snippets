@@ -27,9 +27,9 @@
 		"prefix": "cc",
 		"body": [
 			"const $1 = ($2) => {",
-            "    return (",
-            "        $3",
-            "    );",
+            "\treturn (",
+            "\t\t$3",
+            "\t);",
             "};",
 		],
 		"description": "create component"
