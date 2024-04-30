@@ -1,0 +1,9 @@
+# soft reset
+gsoft() {
+  git reset --soft HEAD~$1
+}
+
+# hard reset
+ghard() {
+  git reset --hard HEAD~$1
+}
