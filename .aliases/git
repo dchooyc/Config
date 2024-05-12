@@ -4,8 +4,16 @@ alias gs="git status"
 alias gc="git commit"
 alias gcm="gc -m"
 alias ga="git add"
-alias gp="git push"
 alias gr="git restore"
+
+# Push
+alias gp="git push"
+alias gpo="gp origin"
+alias gpso="gp --set-upstream origin"
+
+# Retrieve
 alias clone="git clone"
 alias pull="git pull"
+
+# Config
 alias gconfg="git config --global"
