@@ -50,4 +50,33 @@
 		],
 		"description": "add border style"
 	},
+	"full functional component": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "ff",
+		"body": [
+			"import { ReactNode, FC } from \"react\";",
+			"",
+			"interface $1Props {",
+			"\tclassName?: string;",
+			"\tchildren?: ReactNode;",
+			"\tstyle?: object;",
+			"}",
+			"",
+			"export const $1: FC<$1Props> = ({",
+			"\tclassName = \"\",",
+			"\tchildren = null,",
+			"\tstyle = {},",
+			"}) => {",
+			"\treturn (",
+			"\t\t<div",
+			"\t\t\tclassName={className}",
+			"\t\t\tstyle={style}",
+			"\t\t>",
+			"\t\t\t{children}",
+			"\t\t</div>",
+			"\t);",
+			"};"
+		],
+		"description": "create functional component"
+	}
 }
