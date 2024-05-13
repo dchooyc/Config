@@ -6,6 +6,11 @@ alias gcm="gc -m"
 alias ga="git add"
 alias gr="git restore"
 
+# Branches
+alias gb="git branch"
+alias gbc="git checkout"
+alias gbn="gbc -b"
+
 # Push
 alias gp="git push"
 alias gpo="gp origin"
