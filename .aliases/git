@@ -8,12 +8,14 @@ alias gr="git restore"
 
 # Branches
 alias gb="git branch"
+alias gbd="gb -d"
 alias gbc="git checkout"
 alias gbn="gbc -b"
 
 # Push
 alias gp="git push"
 alias gpo="gp origin"
+alias gpod="gpo --delete"
 alias gpso="gp --set-upstream origin"
 
 # Retrieve
