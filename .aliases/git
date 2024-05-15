@@ -8,7 +8,7 @@ alias gr="git restore"
 
 # Branches
 alias gb="git branch"
-alias gbd="gb -d"
+alias gbd="gb -D"
 alias gbc="git checkout"
 alias gbn="gbc -b"
 
