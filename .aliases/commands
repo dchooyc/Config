@@ -21,3 +21,6 @@ alias l="ls --color=auto"
 alias ll="l -la"
 alias pp="ps aux | 00 -v grep | 00 -i"
 alias mp="makepkg -si"
+
+# Frameworks
+alias njs="npx create-next-app@latest"
