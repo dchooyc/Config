@@ -27,10 +27,10 @@
 		"prefix": "cc",
 		"body": [
 			"const $1 = ($2) => {",
-            "\treturn (",
-            "\t\t$3",
-            "\t);",
-            "};",
+			"\treturn (",
+			"\t\t$3",
+			"\t);",
+			"};",
 		],
 		"description": "create component"
 	},
@@ -78,5 +78,26 @@
 			"};"
 		],
 		"description": "create functional component"
+	},
+	"use state": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "ss",
+		"body": [
+			"const [$1, set${2:${1/([a-z])(.*)/${1:/upcase}${2}/}}] = useState(${3:false});$0"
+		],
+		"description": "declare use state"
+	},
+	"create hook": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "zz",
+		"body": [
+			"import { useEffect } from \"react\";\n",
+			"export default function use$1($2: $3) {",
+			"\tuseEffect(() => {",
+			"\t\t$4",
+			"\t}, [$2]);",
+			"}"
+		],
+		"description": "create a hook"
 	}
 }
