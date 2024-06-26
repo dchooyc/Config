@@ -5,6 +5,9 @@ alias gc="git commit"
 alias gcm="gc -m"
 alias ga="git add"
 alias gr="git restore"
+alias grs="gr --staged"
+alias gst="git stash"
+alias gsta="gst apply"
 
 # Branches
 alias gb="git branch"
