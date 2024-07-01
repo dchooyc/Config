@@ -99,5 +99,19 @@
 			"}"
 		],
 		"description": "create a hook"
-	}
+	},
+	"create page": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "pp",
+		"body": [
+			"\"use client\";\n",
+			"export default function $1() {",
+			"\treturn (",
+			"\t\t<main className=\"$2\">",
+			"\t\t</main>",
+			"\t);",
+			"}"
+		],
+		"description": "create a page"
+	},
 }
