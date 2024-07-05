@@ -114,4 +114,14 @@
 		],
 		"description": "create a page"
 	},
+	"flex div": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "dd",
+		"body": [
+			"<div className=\"flex flex-row justify-center items-center\">",
+			"\t$1",
+			"</div>"
+		],
+		"description": "create a flex div"
+	},
 }
