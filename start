@@ -40,9 +40,17 @@ else
     ecr "Failure to add $USER to vboxusers"
 fi
 
+# Install manual packages
+man_packages="$CONF/.packages/manual"
+if mm Packages && map amn $man_packages && cd; then
+    ecblock yellow "Manual packages installed successfully"
+else
+    ecr "Failure in the manual packages stuff"
+fi
+
 # Install aur packages
 aur_packages=$(range $CONF/.packages/aur)
-if mm Packages && amn yay && cd && yyy $aur_packages; then
+if yyy $aur_packages; then
     ecblock yellow "Aur packages installed successfully"
 else
     ecr "Failure in the aur packages stuff"

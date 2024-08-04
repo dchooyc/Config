@@ -1,6 +1,6 @@
 bluez-utils bluez-deprecated-tools
 go nodejs npm
-neovim neofetch tmux
+neovim neofetch tmux less
 noto-fonts-cjk ntfs-3g
-audacious vlc transmission-gtk
+audacious vlc transmission-gtk gimp
 virtualbox-host-modules-arch virtualbox
