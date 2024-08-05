@@ -15,8 +15,10 @@ alias vsexi="map code --install-extension $CONF_VSCODE/extensions"
 alias vsexe="code --list-extensions > $CONF_VSCODE/extensions"
 alias vssni="cp -r $CONF_VSCODE/snippets $VSCODE_USER"
 alias vssne="cp -r $VSCODE_USER/snippets $CONF_VSCODE"
-alias vsi="vskbi; vsexi; vssni"
-alias vse="vskbe; vsexe; vssne"
+alias vssei="cp $CONF_VSCODE/settings.json $VSCODE_USER"
+alias vssee="cp $VSCODE_USER/settings.json $CONF_VSCODE"
+alias vsi="vskbi; vsexi; vssni; vssei"
+alias vse="vskbe; vsexe; vssne; vssee"
 
 # Nvim
 alias ni="cp -r $CONF_FILES/nvim ~/.config/"
