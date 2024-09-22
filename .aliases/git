@@ -15,6 +15,10 @@ alias gbd="gb -D"
 alias gbc="git checkout"
 alias gbn="gbc -b"
 
+# Merge
+alias gm="git merge"
+alias gmm="gm master"
+
 # Push
 alias gp="git push"
 alias gpo="gp origin"
