@@ -1,5 +1,6 @@
 {
     "workbench.startupEditor": "none",
     "[typescriptreact]": {},
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.stickyScroll.enabled": false
 }
