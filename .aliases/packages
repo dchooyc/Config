@@ -10,3 +10,6 @@ alias uuu="uu --noconfirm"
 # Yay
 alias yy="yay -S"
 alias yyy="yy --noconfirm"
+
+# Package
+alias keyring="vv archlinux-keyring"
