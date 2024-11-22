@@ -124,4 +124,22 @@
 		],
 		"description": "create a flex div"
 	},
+	"popup state": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "ps",
+		"body": [
+			"import { create } from \"zustand\";\n",
+			"interface $1PopupState {",
+			"\topen: boolean;",
+			"\thandleOpen: () => void;",
+			"}\n",
+			"export const use$1PopupStore = create<$1PopupState>()((set) => ({",
+			"\topen: false,",
+			"\thandleOpen: () => set(($1PopupState) => ({",
+			"\t\topen: $1PopupState.open !== true",
+			"\t})),",
+			"}));"
+		],
+		"description": "use zustand to manage popup state"
+	},
 }
