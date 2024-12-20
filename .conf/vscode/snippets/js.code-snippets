@@ -118,9 +118,13 @@
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
 		"prefix": "dd",
 		"body": [
-			"<div className=\"flex flex-row justify-center items-center\">",
-			"\t$1",
-			"</div>"
+			"<div",
+			"\tclassName={`$1",
+			"\t\tflex flex-row justify-center items-center",
+			"\t`}",
+			">",
+			"\t$2",
+			"</div>$3"
 		],
 		"description": "create a flex div"
 	},
