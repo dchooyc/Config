@@ -3,12 +3,12 @@
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
 		"prefix": "im",
 		"body": [
-      "<Image",
-      "\tsrc={$1}",
-      "\talt={\"$2 image\"}",
-      "\twidth={${3:1920}}",
-      "\theight={${4:1080}}",
-      "/>",
+			"<Image",
+			"\tsrc={$1}",
+			"\talt={\"$2 image\"}",
+			"\twidth={${3:1920}}",
+			"\theight={${4:1080}}",
+			"/>",
 		],
 		"description": "Create image component"
 	}
