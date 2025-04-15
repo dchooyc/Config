@@ -44,5 +44,13 @@
     {
         "key": "ctrl+9",
         "command": "workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "ctrl+shift+3",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+shift+4",
+        "command": "editor.action.transformToLowercase"
     }
 ]
