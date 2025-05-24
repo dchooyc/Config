@@ -13,5 +13,6 @@ ms-toolsai.jupyter-renderers
 ms-toolsai.vscode-jupyter-cell-tags
 ms-toolsai.vscode-jupyter-slideshow
 njqdev.vscode-python-typehint
+redhat.vscode-xml
 yoavbls.pretty-ts-errors
 zainchen.json
