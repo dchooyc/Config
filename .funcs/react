@@ -1,0 +1,18 @@
+# creates folders for react project
+rfolders() {
+  local base_dir="${1:-.}"
+  local components_subdirs=(animations buttons display feedback form layout navigation popups)
+  local other_dirs=(constants data hooks)
+
+  # components
+  for dir in "${components_subdirs[@]}"; do
+    mkdir -p "$base_dir/components/$dir"
+    touch "$base_dir/components/$dir/index.ts"
+  done
+
+  # other dirs
+  for dir in "${other_dirs[@]}"; do
+    mkdir -p "$base_dir/$dir"
+    touch "$base_dir/$dir/index.ts"
+  done
+}

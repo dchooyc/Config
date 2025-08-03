@@ -12,3 +12,10 @@ ghard() {
 gd () {
   git clone "git@github.com:dchooyc/$1.git"
 }
+
+# push to new repo
+gnew () {
+  git remote add origin git@github.com:dchooyc/$1.git
+  git branch -M master
+  git push -u origin master
+}
