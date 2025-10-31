@@ -71,7 +71,8 @@
 			"\treturn (",
 			"\t\t<div",
 			"\t\t\tclassName={cn(",
-			"\t\t\t\tclassName",
+			"\t\t\t\tclassName,",
+			"\t\t\t\t\"wf fr justify-center items-center\",",
 			"\t\t\t)}",
 			"\t\t\tstyle={style}",
 			"\t\t>",
@@ -123,7 +124,7 @@
 		"body": [
       "<div",
       "\tclassName={cn(",
-      "\t\t\"flex flex-row justify-center items-center$1\",",
+      "\t\t\"fr justify-center items-center$1\",",
       "\t)}",
       ">",
 			"\t$2",
