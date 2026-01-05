@@ -4,6 +4,7 @@ alias gg="cd ~/Code"
 alias rr="cd ~/Downloads"
 alias qq="cd ~/Config"
 alias kk="cd ~/Work"
+alias kks="cd ~/Work/kakashi"
 
 # Change directory stuff
 alias ..="cd .."
