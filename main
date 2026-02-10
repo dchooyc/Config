@@ -8,4 +8,4 @@ ffs $CONF/.funcs
 ifs $MEMO/main
 ifs $TMPL/main
 
-neofetch
+fastfetch
