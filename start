@@ -28,17 +28,10 @@ else
     ecr "Failure configuring git stuff"
 fi
 
-# Set transmission as default
-xdg-mime default transmission-gtk.desktop x-scheme-handler/magnet
+# Set qbittorrent as default
+xdg-mime default qbittorrent.desktop x-scheme-handler/magnet
 magnet_default=$(xdg-mime query default x-scheme-handler/magnet)
 ecblock yellow "$magnet_default set as default for magnet links"
-
-# Set up virtualbox
-if sudo usermod -aG vboxusers $USER; then
-    ecblock yellow "$USER added to vboxusers"
-else
-    ecr "Failure to add $USER to vboxusers"
-fi
 
 # Install manual packages
 man_packages="$CONF/.packages/manual"
