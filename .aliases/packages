@@ -13,3 +13,12 @@ alias yyy="yy --noconfirm"
 
 # Package
 alias keyring="vv archlinux-keyring"
+alias mirrors='sudo reflector \
+  --country Singapore,Malaysia,Thailand,"Hong Kong",Australia \
+  --age 24 \
+  --protocol https \
+  --sort rate \
+  --number 10 \
+  --save /etc/pacman.d/mirrorlist && \
+ecblock green "mirrors updated" && \
+cat /etc/pacman.d/mirrorlist'
