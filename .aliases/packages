@@ -6,6 +6,7 @@ alias xx="pm -U"
 alias dl="pm -R"
 alias uu="pm -Syyu"
 alias uuu="uu --noconfirm"
+alias ccc="pm -Sc"
 
 # Yay
 alias yy="yay -S"
