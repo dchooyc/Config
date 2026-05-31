@@ -25,3 +25,13 @@ alias mp="makepkg -si"
 
 # Frameworks
 alias njs="npx create-next-app@latest"
+
+# Systemctl
+alias sc="sudo systemctl"
+alias sc0="sc stop"
+alias sc1="sc start"
+alias scr="sc restart"
+alias scs="sc status"
+alias sce="sc enable"
+alias scd="sc disable"
+alias scl="sc list-units --type=service --state=running"
