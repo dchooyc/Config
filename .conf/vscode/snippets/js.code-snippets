@@ -157,4 +157,23 @@
 		],
 		"description": "use zustand to manage popup state"
 	},
+	"map over something": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "mm",
+		"body": [
+			"{",
+			"\t$1.map(($2, index) => {",
+			"\t\treturn (",
+			"\t\t\t<div",
+			"\t\t\t\tkey={`$3-\\${index}`}",
+			"\t\t\t\tclassName={cn(\"$4\")}",
+			"\t\t\t>",
+			"\t\t\t\t$5",
+			"\t\t\t</div>",
+			"\t\t);",
+			"\t})",
+			"}"
+		],
+		"description": "map over something"
+	},
 }
